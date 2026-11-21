@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FD Forex AI
 
 FD Forex AI is a private Telegram Mini App foundation for Forex market research, AI-assisted analysis, backtesting, and paper trading. Production market data is served by the backend through Twelve Data. It does not provide broker execution, real-money trading, or profit guarantees.
@@ -134,3 +135,6 @@ The repository includes a Netlify SPA configuration. Configure Railway's backend
 4. Once the public Railway URL and webhook secret are configured, register the webhook explicitly with `npm run telegram:webhook --prefix backend -- register`, then verify it with `npm run telegram:webhook --prefix backend -- diagnose`. Registration is a manual post-deployment action; deployment itself does not change Telegram's webhook. Configure the Mini App domain in Telegram/BotFather to match the Netlify hostname.
 
 Automated paper entries will remain WAIT until a reliable, timestamped economic-news/fundamentals provider is implemented and configured. This is an intentional fail-closed behavior, not a deployment failure. Existing paper accounts, risk controls, and user isolation remain backend/MongoDB-managed. Do not enable broker integrations or real-money order execution.
+=======
+# fx_bot
+>>>>>>> e0b32aeb16e06bc6ea45765ee2b45d761c0ac05d
