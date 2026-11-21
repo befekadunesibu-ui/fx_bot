@@ -1,0 +1,33 @@
+{
+  "name": "fd-forex-ai-backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "telegram:webhook": "tsx scripts/telegram-webhook.ts",
+    "test:telegram": "tsx scripts/telegram-webhook.test.ts",
+    "test:market": "tsx scripts/market-data.test.ts",
+    "test:phase2": "tsx scripts/phase2.test.ts",
+    "test:scheduler": "tsx scripts/paper-scheduler.test.ts",
+    "test:mt5": "tsx scripts/mt5-provider.test.ts",
+    "test:strategy": "tsx scripts/fd-smart-strategy.test.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.8.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
